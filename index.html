@@ -1,13 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Landing Page SEO Cepat Index">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My SEO Page</title>
+  <meta charset="utf-8">
+  <title>Marketing Talks Daily | Suara Anak MarComm Esa Unggul</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cerita kreatif mahasiswa Marketing Communication Universitas Esa Unggul. Lihat vlog, pengalaman, dan perjalanan digital anak MarComm Marketing Talks Daily.">
+  <meta name="keywords" content="Marketing Talks Daily, Marketing Communication, Esa Unggul, anak MarComm, vlog mahasiswa, digital marketing, kampus komunikasi, tugas kreatif">
+  <meta name="robots" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="geo.region" content="ID">
+  <meta name="geo.placename" content="Indonesia">
+  <meta name="geo.position" content="-6.200000;106.816666">
+  <meta name="ICBM" content="-6.200000, 106.816666">
+  <meta name="google-site-verification" content="EvwtGrIs1rOQMIenFXsSd30-hG9twycozFxp1JBAmqY" />
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Marketing Talks Daily | Suara Anak MarComm Esa Unggul">
+  <meta property="og:description" content="Karya digital dan cerita nyata mahasiswa Marketing Communication Universitas Esa Unggul Marketing Talks Daily.">
+  <meta property="og:image" content="assets/logo-marketing-talks-daily.png">
+  <meta property="og:url" content="https://marketingtalksdaily.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marketing Talks Daily">
+  <meta name="twitter:description" content="Cerita dan karya digital mahasiswa MarComm Esa Unggul Marketing Talks Daily.">
+  <meta name="twitter:image" content="assets/logo-marketing-talks-daily.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://marketingtalksdaily.netlify.app/">
+  <link rel="icon" type="image/png" href="assets/icon.webp" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Marketing Talks Daily",
+    "url": "https://marketingtalksdaily.netlify.app/",
+    "logo": "assets/logo-marketing-talks-daily.png",
+    "sameAs": [
+      "https://www.instagram.com/fdyapgr",
+      "https://www.instagram.com/lutfiah9nr",
+      "https://www.instagram.com/yoellenn_"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #2c3e53;
+      color: #333;
+    }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin-top: 1rem;
+  overflow: hidden;
+  background: #000;
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.about-us {
+  background: #3d5673;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  background: #496286;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.profile-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.profile-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.profile-card p {
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.95rem;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.a,a {
+color: #aed3ff;
+text-decoration: none;
+}
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+	      background: #34475d;
+      padding: 0 0.3rem;
+    }
+    header {
+      background: #496286;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+	      margin-bottom: 20px;
+      padding: 1rem 0;
+      padding-right: 15px;
+    }
+    .logo img {
+      width: 150px;
+      height: 50px;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      gap: 1.5rem;
+    }
+    .hero .text, .hero .image {
+      flex: 1 1 48%;
+      min-width: 300px;
+      box-sizing: border-box;
+    }
+    .hero .text {
+      background: #3d5673;
+      color: white;
+      padding: 1rem;
+	      margin-top: -15px;
+      border-radius: 12px;
+    }
+    .hero .text h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+	h3 {
+    display: block;
+    font-size: 1.30em;
+    margin-block-start: 0em;
+	color: #fff;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+	text-align: center;
+    unicode-bidi: isolate;
+}
+    .hero .image {
+    background: #3d5673;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 1rem;
+    }
+    .content-section {
+      margin-top: 2rem;
+    }
+    .box {
+      background: #3d5673;
+      color: white;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .box:last-child {
+      background: #3d5673;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    @media(max-width: 768px) {
+      nav a {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        padding-right: 5px;
+      }
+      .hero {
+        flex-direction: column;
+      }
+      .hero .text, .hero .image {
+        flex: 1 1 100%;
+      }
+	      .hero .image {
+    background: #3d5673;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 12px;
+    padding: 1rem;
+    }
+    }
+  </style>
 </head>
 <body>
-  <h1>Selamat datang</h1>
-  <p>Ini halaman yang cepat diindeks Google</p>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="assets/logo-marketing-talks-daily.png" alt="Logo">
+      </div>
+      <nav>
+        <a href="https://marketingtalksdaily.netlify.app/">Home</a>
+        <a href="https://marketingtalksdaily.netlify.app/creative-journey">Creative Journey</a>
+      </nav>
+    </header>
+
+<div class="image-section">
+  <img src="assets/marketing-talks-daily.png" alt="Digital Movement : Suara Anak MarComm Esa Unggul" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px;">
+</div>
+
+    <section class="hero">
+      <div class="text">
+        <h1>Digital Movement : Suara Anak MarComm Esa Unggul</h1>
+        <p>Halo! Kamu lagi mampir di website yang dibuat langsung oleh mahasiswa Marketing Communication Universitas Esa Unggul. Website ini lahir dari tugas kelas, tapi isinya real. Cerita, insight, dan karya kreatif dari sudut pandang kami sebagai anak MarComm.</p>
+        <p>Di sini kamu bakal nemuin konten <a href="https://marketingtalksdaily.netlify.app/" title="Marketing Talks Daily" target="_blank">Marketing Talks Daily</a> 'seru, mulai dari keseharian jadi anak komunikasi, behind the scenes project, sampai testimoni & quotes yang ngasih gambaran betapa dinamisnya dunia pemasaran dan komunikasi digital.</p>
+        <p>Walau ini tugas kampus, kami percaya suara kami tetap layak buat didengar di luar kelas. </p>
+      </div>
+
+      <div class="image">
+        <h3 class="video-title">Vlog kami "Seharian Jadi Anak Marketing Communication"</h3>
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/y0SB_Bbr-Yk" 
+            title="Vlog kami Seharian Jadi Anak Marketing Communication" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+	  
+    </section>
+
+    <section class="content-section">
+      <div class="box">
+        <h2>Vlog kami "Seharian Jadi Anak Marketing Communication" Sebagai Marketing Talks Daily</h2>
+        <p>Daily vlog ini menjadi bukti bahwa anak komunikasi nggak hanya sibuk tampil stylish. Karena dibalik outfit yang kece, terdapat semangat belajar yang tinggi, kreativitas yang mumpuni, serta strategi komunikasi yang kami miliki.</p>
+        <p>Lewat gerakan kecil ini, kami memperlihatkan bahwa di balik teori, ada praktek nyata; di balik tugas, ada karya yang hidup. Mahasiswa jurusan Marketing Communication ini dibekali skill lengkap buat bikin strategi iklan dan pemasaran yang keratif.</p>
+		<p>Mulai dari bikin desain, ilustrasi, sampai layout iklan. Kita juga belajar cara motret iklan (copywriting) dan mem-visualisasikan ide. Ohya, kita juga belajar tentang Event Management, dan praktik nya langsung membuat event besar kampus lho,  yang  panitia nya hanya terdiri dari kami sekelas.</p>
+		<p>Jadi tentunya apa yang kalian lihat di video ini hanya sebagian kecil dari banyaknya kegiatan kami yang sebenarnya.  Walaupun banyaknya tugas yang kami terima, tapi kami semua jalani dan selesaikan dengan enjoy. Jadi, Selamat menikmati cerita perjalanan kami di halaman selanjutnya ya, dalam dunia komunikasi yang terus bergerak dinamis!</p>
+      </div>
+	  
+	  <section class="about-us">
+  <h2 class="about-title">ABOUT US</h2>
+  <div class="about-cards">
+    <div class="profile-card">
+      <img src="assets/esa-unggul-marketing-talks-daily-fadiya-aprianggraeni-1.png" alt="Fadiya Aprianggraeni">
+      <h3>Fadiya Aprianggraeni</h3>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icon" style="width: 20px; height: 20px;"> @fdyapgr</p>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon" style="width: 20px; height: 20px;"> fdyanggraeni@gmail.com</p>
+    </div>
+    <div class="profile-card">
+      <img src="assets/esa-unggul-marketing-talks-daily-lutfiah-nurhikmah-1.png" alt="Lutfiah Nurhikmah">
+      <h3>Lutfiah Nurhikmah</h3>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icon" style="width: 20px; height: 20px;"> @lutfiah9nr</p>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon" style="width: 20px; height: 20px;"> lutfiahnurhikmah09@gmail.com</p>
+    </div>
+    <div class="profile-card">
+      <img src="assets/esa-unggul-marketing-talks-daily-monica-ellena-1.png" alt="Monica Ellena">
+      <h3>Monica Ellena</h3>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icon" style="width: 20px; height: 20px;"> @yoellenn_</p>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon" style="width: 20px; height: 20px;"> monicaellena13@gmail.com</p>
+    </div>
+  </div>
+</section>
+  <footer style="background-color: #3d5673; color: white; text-align: center; padding: 1rem 0; font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+  &copy; 2025 Marketing Talks Daily. All rights reserved.
+</footer>
+  </div>
 </body>
 </html>
